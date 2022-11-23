@@ -51,7 +51,7 @@
 <h1 align="center"> Use Case модель </h1>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/105451157/198143168-9e967e88-6da2-40b7-a22a-ea52dfee563d.png" />
+  <img src="https://github.com/MaxaimBardin/MaxProject/blob/main/pngFiles/Screenshot_1.png" />
 </p>
 
 <div align="center">Рисунок 1 - Use Case модель </div>
