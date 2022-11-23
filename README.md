@@ -63,3 +63,11 @@
 </p>
 
 <div align="center">Рисунок 2 - ER модель </div>
+
+<h1 align="center"> BPMN модель </h1>
+
+<p align="center">
+  <img src="https://github.com/MaxaimBardin/MaxProject/blob/main/pngFiles/Screenshot_3.png" />
+</p>
+
+<div align="center">Рисунок 3 - BPMN модель </div>
