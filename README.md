@@ -50,10 +50,16 @@
 
 <h1 align="center"> Use Case модель </h1>
 
-![image](https://user-images.githubusercontent.com/105451157/198143168-9e967e88-6da2-40b7-a22a-ea52dfee563d.png)
+<p align="center">
+  <img src="[http://some_place.com/image.png](https://user-images.githubusercontent.com/105451157/198143168-9e967e88-6da2-40b7-a22a-ea52dfee563d.png)" />
+</p>
+
 <div align="center">Рисунок 1 - Use Case модель </div>
 
 <h1 align="center"> ER модель </h1>
 
-![image](https://github.com/MaxaimBardin/MaxProject/blob/main/pngFiles/Screenshot_2.png)
+<p align="center">
+  <img src="[http://some_place.com/image.png](https://github.com/MaxaimBardin/MaxProject/blob/main/pngFiles/Screenshot_2.png)" />
+</p>
+
 <div align="center">Рисунок 2 - ER модель </div>
