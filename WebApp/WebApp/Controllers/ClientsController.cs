@@ -20,12 +20,7 @@ namespace WebApp.Controllers
         [HttpGet("")]
         public async Task<ActionResult<IEnumerable<Client>>> GetClients()
         {
-            if (ContextClient.Clients == null)
-            {
-                return NotFound();
-            }
             return await ContextClient.Clients.ToListAsync();
-
         }
 
 
@@ -46,12 +41,7 @@ namespace WebApp.Controllers
         public async Task<ActionResult<Mentor>> GetMentor(int id)
         {
             var mentor = await ContextClient.Mentors.FindAsync(id);
-
-            if (mentor == null)
-            {
-                return NotFound();
-            }
-
+            if (mentor == null) return NotFound();
             return mentor;
         }
 
@@ -76,36 +66,22 @@ namespace WebApp.Controllers
         [HttpPut("PutClient/{id}")] // /api/client?id=17  id=17
         public async Task<IActionResult> PutClient([FromQuery] int id, [FromBody] Client client)
         {
-            if (id != client.Id)
-            {
-                return BadRequest();
-            }
-            return NoContent();
+            return id == client.Id ? NoContent() : BadRequest();
         }
 
         [HttpPut("PutMentor/{id}")] // /api/client?id=17  id=17
         public async Task<IActionResult> PutMentor([FromQuery] int id, [FromBody] Mentor mentor)
         {
-            if (id != mentor.Id)
-            {
-                return BadRequest();
-            }
-            return NoContent();
+            return id == mentor.Id ? NoContent() : BadRequest();
         }
 
         [HttpDelete("DeleteClient/{id}")]
         public async Task<IActionResult> DeleteClient([FromQuery] int id)
         {
-            if (ContextClient.Clients == null)
-            {
-                return NotFound();
-            }
-
+            if (ContextClient.Clients == null) return NotFound();
+            
             var client = await ContextClient.Clients.FindAsync(id);
-            if (client == null)
-            {
-                return NotFound();
-            }
+            if (client == null) return NotFound();
 
             ContextClient.Clients.Remove(client);
             await ContextClient.SaveChangesAsync();
@@ -116,17 +92,11 @@ namespace WebApp.Controllers
         [HttpDelete("DeleteMentor/{id}")]
         public async Task<IActionResult> DeleteMentor([FromQuery] int id)
         {
-            if (ContextClient.Mentors == null)
-            {
-                return NotFound();
-            }
-
+            if (ContextClient.Mentors == null) return NotFound();
+            
             var mentor = await ContextClient.Mentors.FindAsync(id);
-            if (mentor == null)
-            {
-                return NotFound();
-            }
-
+            if (mentor == null) return NotFound();
+            
             ContextClient.Mentors.Remove(mentor);
             await ContextClient.SaveChangesAsync();
 
