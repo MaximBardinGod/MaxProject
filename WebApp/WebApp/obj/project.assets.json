@@ -2435,11 +2435,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bmaxi\\Documents\\GitHub\\MaxProject\\WebApp\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\bmaxi\\OneDrive\\Рабочий стол\\WebApp\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "C:\\Users\\bmaxi\\Documents\\GitHub\\MaxProject\\WebApp\\WebApp\\WebApp.csproj",
+      "projectPath": "C:\\Users\\bmaxi\\OneDrive\\Рабочий стол\\WebApp\\WebApp\\WebApp.csproj",
       "packagesPath": "C:\\Users\\bmaxi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bmaxi\\Documents\\GitHub\\MaxProject\\WebApp\\WebApp\\obj\\",
+      "outputPath": "C:\\Users\\bmaxi\\OneDrive\\Рабочий стол\\WebApp\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

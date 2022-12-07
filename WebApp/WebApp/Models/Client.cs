@@ -16,9 +16,6 @@ namespace WebApp.Models
 
         public Client() { }
 
-        //public List<Mentor> mentors { get; set;}
-
-        // /api/client?id=17&name=ivan&phoneNumber=112
         public Client(int id, string name, string phoneNumber, Mentor mentors) 
         {
             Id = id;

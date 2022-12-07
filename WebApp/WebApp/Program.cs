@@ -9,18 +9,8 @@ namespace WebApp
     {
         public static void Main(string[] args) 
         {
-            List<Client> partsList = new List<Client>();
-
-            Handler<Client> partsHandler = new Handler<Client>("FileClients.json");
-            
-            partsList.Add(new Client(100, "Max", "123123", new Mentor( 1, "Alex", "Main Mentor")));
-            partsList.Add(new Client(101, "Sergey", "123123", new Mentor(1, "Alex", "Main Mentor")));
-            
-            partsHandler.Update(partsList);
-            partsHandler.OutputJsonContents();
-
-
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<ClientsContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ClientContext")));
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
