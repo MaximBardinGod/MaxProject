@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace WebApp.Controllers
 {
-    [Route("api/DataBase")]
+    [Route("api/clients")]
     [ApiController]
     public class ClientsController : Controller
     {
@@ -24,7 +24,7 @@ namespace WebApp.Controllers
         }
 
 
-        [HttpGet("GetClient/{id}")]
+        [HttpGet("{id}")] // /api/clients/{id}
         public async Task<ActionResult<Client>> GetClient(int id)
         {
             var client = await ContextClient.Clients.FindAsync(id);
@@ -32,15 +32,15 @@ namespace WebApp.Controllers
             return client;
         }
 
-        [HttpGet("GetMentor/{id}")]
+        [HttpGet("{id}/mentor")] // /api/clients/{id}/mentor
         public async Task<ActionResult<Mentor>> GetMentor(int id)
         {
-            var mentor = await ContextClient.Mentors.FindAsync(id);
-            if (mentor == null) return NotFound();
-            return mentor;
+            var client = await ContextClient.Clients.FindAsync(id)
+            if (client == null) return NotFound();
+            return client.Mentor;
         }
 
-        [HttpPost("PostClient")] //api/client/PostClient
+        [HttpPost()] //api/clients
         public async Task<ActionResult<Client>> PostClient(Client client)
         { 
             ContextClient.Clients.Add(client);
@@ -57,9 +57,14 @@ namespace WebApp.Controllers
             return CreatedAtAction(nameof(GetClients), new { id = mentor.Id }, mentor);
         }
         
-        [HttpPut("PutClient/{id}")] // /api/client?id=17  id=17
-        public async Task<IActionResult> PutClient([FromQuery] int id, [FromBody] Client client)
+        [HttpPut("{id}")] // /api/clients/{id}
+        public async Task<IActionResult> PutClient(int id, [FromBody] Client client)
         {
+            var dbClient = ClientContext.FindAsync(id);
+            dbClient.FIO = client.FIO;
+            // ...
+            await ClientContext.SaveChangesAsync();
+        
             return id == client.Id ? NoContent() : BadRequest();
         }
 
@@ -69,7 +74,7 @@ namespace WebApp.Controllers
             return id == mentor.Id ? NoContent() : BadRequest();
         }
 
-        [HttpDelete("DeleteClient/{id}")]
+        [HttpDelete("id}")]
         public async Task<IActionResult> DeleteClient(int id)
         {
             if (ContextClient.Clients == null) return NotFound();
@@ -83,15 +88,15 @@ namespace WebApp.Controllers
             return NoContent();
         }
 
-        [HttpDelete("DeleteMentor/{id}")]
+        [HttpDelete("{id}/mentor")]
         public async Task<IActionResult> DeleteMentor(int id)
         {
             if (ContextClient.Mentors == null) return NotFound();
 
-            var mentor = await ContextClient.Mentors.FindAsync(id);
-            if (mentor == null) return NotFound();
+            var client = await ContextClient.Clients.FindAsync(id);
+            if (client == null) return NotFound();
 
-            ContextClient.Mentors.Remove(mentor);
+            ContextClient.Mentors.Remove(client.Mentor);
             await ContextClient.SaveChangesAsync();
 
             return NoContent();
