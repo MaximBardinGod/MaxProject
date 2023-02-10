@@ -2270,11 +2270,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WebApp\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Maxim\\Documents\\Учеба\\TP\\MaxProject\\WebApp\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "D:\\WebApp\\WebApp\\WebApp.csproj",
+      "projectPath": "C:\\Users\\Maxim\\Documents\\Учеба\\TP\\MaxProject\\WebApp\\WebApp\\WebApp.csproj",
       "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-      "outputPath": "D:\\WebApp\\WebApp\\obj\\",
+      "outputPath": "C:\\Users\\Maxim\\Documents\\Учеба\\TP\\MaxProject\\WebApp\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config"

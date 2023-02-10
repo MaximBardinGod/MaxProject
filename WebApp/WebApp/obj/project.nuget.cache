@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0ZMS8712wgetA0k8brQv1y+Sbrd6iUClHAooqegThQaw/V5nI/uKT0lu64Z6C/W3UGMhwgNysEYi4o/2jBeKMg==",
+  "dgSpecHash": "Cb7/TRLRAtX90/wao23w/5v9sF5rW3YNgVwBjh2RJvZJIGhrP4/adjGtrQmJOmSeM3nGSfAvnPjxlWIvEqD64w==",
   "success": true,
-  "projectFilePath": "D:\\WebApp\\WebApp\\WebApp.csproj",
+  "projectFilePath": "C:\\Users\\Maxim\\Documents\\Учеба\\TP\\MaxProject\\WebApp\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maxim\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

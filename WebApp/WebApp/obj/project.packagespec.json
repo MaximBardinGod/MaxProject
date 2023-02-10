@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "D:\\WebApp\\WebApp\\WebApp.csproj",
+    "projectUniqueName": "C:\\Users\\Maxim\\Documents\\Учеба\\TP\\MaxProject\\WebApp\\WebApp\\WebApp.csproj",
     "projectName": "WebApp",
-    "projectPath": "D:\\WebApp\\WebApp\\WebApp.csproj",
-    "outputPath": "D:\\WebApp\\WebApp\\obj\\",
+    "projectPath": "C:\\Users\\Maxim\\Documents\\Учеба\\TP\\MaxProject\\WebApp\\WebApp\\WebApp.csproj",
+    "outputPath": "C:\\Users\\Maxim\\Documents\\Учеба\\TP\\MaxProject\\WebApp\\WebApp\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "net60"
