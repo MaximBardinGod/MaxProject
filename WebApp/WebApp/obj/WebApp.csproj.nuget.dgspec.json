@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bmaxi\\OneDrive\\Рабочий стол\\WebApp\\WebApp\\WebApp.csproj": {}
+    "D:\\WebApp\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bmaxi\\OneDrive\\Рабочий стол\\WebApp\\WebApp\\WebApp.csproj": {
+    "D:\\WebApp\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmaxi\\OneDrive\\Рабочий стол\\WebApp\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "D:\\WebApp\\WebApp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Users\\bmaxi\\OneDrive\\Рабочий стол\\WebApp\\WebApp\\WebApp.csproj",
-        "packagesPath": "C:\\Users\\bmaxi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmaxi\\OneDrive\\Рабочий стол\\WebApp\\WebApp\\obj\\",
+        "projectPath": "D:\\WebApp\\WebApp\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
+        "outputPath": "D:\\WebApp\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bmaxi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,8 +63,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -82,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.308\\RuntimeIdentifierGraph.json"
         }
       }
     }

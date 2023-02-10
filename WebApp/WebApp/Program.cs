@@ -1,11 +1,14 @@
+using Microsoft.AspNetCore.Builder;
 using WebApp.Models;
-using WebApp.Controllers;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 
 namespace WebApp 
 {
-    public class Program 
+    public static class Program 
     {
         public static void Main(string[] args) 
         {

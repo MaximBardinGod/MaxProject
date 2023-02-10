@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApp.Models;
 using Microsoft.EntityFrameworkCore;
@@ -60,13 +62,13 @@ namespace WebApp.Controllers
         [HttpPut("PutClient/{id}")] // /api/client?id=17  id=17
         public async Task<IActionResult> PutClient([FromQuery] int id, [FromBody] Client client)
         {
-            return id == client.Id ? NoContent() : BadRequest();
+            return id == client.Id ? (IActionResult) NoContent() : BadRequest();
         }
 
         [HttpPut("PutMentor/{id}")] // /api/client?id=17  id=17
         public async Task<IActionResult> PutMentor([FromQuery] int id, [FromBody] Mentor mentor)
         {
-            return id == mentor.Id ? NoContent() : BadRequest();
+            return id == mentor.Id ? (IActionResult) NoContent() : BadRequest();
         }
 
         [HttpDelete("DeleteClient/{id}")]
