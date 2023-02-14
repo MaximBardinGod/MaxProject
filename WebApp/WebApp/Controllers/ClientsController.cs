@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApp.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace WebApp.Controllers
 {
-    [Route("api/DataBase")]
+    /*[Route("api/DataBase")]
     [ApiController]
     public class ClientsController : Controller
     {
@@ -98,5 +97,5 @@ namespace WebApp.Controllers
 
             return NoContent();
         }
-    }
+    }*/
 }

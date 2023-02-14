@@ -1,39 +1,21 @@
-using Microsoft.AspNetCore.Builder;
-using WebApp.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+var app = builder.Build();
 
-namespace WebApp 
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
 {
-    public static class Program 
-    {
-        public static void Main(string[] args) 
-        {
-            var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddDbContext<ClientsContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ClientContext")));
-
-            builder.Services.AddControllers();
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-
-            var app = builder.Build();
-
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-
-            app.UseHttpsRedirection();
-
-            app.UseAuthorization();
-
-            app.MapControllers();
-
-            app.Run();
-        }
-    }
+// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+app.UseHsts();
 }
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.MapControllerRoute(
+name: "default",
+pattern: "{controller}/{action=Index}/{id?}");
+app.MapFallbackToFile("index.html");;
+app.Run();

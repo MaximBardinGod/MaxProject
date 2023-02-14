@@ -201,7 +201,6 @@ D:\WebApp\WebApp\obj\Debug\net6.0\WebApp.genruntimeconfig.cache
 D:\WebApp\WebApp\obj\Debug\net6.0\ref\WebApp.dll
 C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\bin\Debug\net6.0\appsettings.json
-C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\bin\Debug\net6.0\FileClients.json
 C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\bin\Debug\net6.0\WebApp.exe
 C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\bin\Debug\net6.0\WebApp.deps.json
 C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\bin\Debug\net6.0\WebApp.runtimeconfig.json
@@ -261,3 +260,8 @@ C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\obj\Debug\net6.0
 C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\obj\Debug\net6.0\WebApp.pdb
 C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\obj\Debug\net6.0\WebApp.genruntimeconfig.cache
 C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\obj\Debug\net6.0\ref\WebApp.dll
+C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\obj\Debug\net6.0\WebApp.RazorAssemblyInfo.cache
+C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\obj\Debug\net6.0\WebApp.RazorAssemblyInfo.cs
+C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\bin\Debug\net6.0\ClientApp\package-lock.json
+C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\bin\Debug\net6.0\ClientApp\package.json
+C:\Users\Maxim\Documents\Учеба\TP\MaxProject\WebApp\WebApp\bin\Debug\net6.0\ClientApp\public\manifest.json
